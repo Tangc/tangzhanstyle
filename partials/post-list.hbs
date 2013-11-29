@@ -1,0 +1,21 @@
+<section class="post-list">
+
+{{#foreach posts}}
+<div class="post">
+
+	<div class="post-head">
+		<div class="title">
+			<a href="{{url}}"> {{title}} </a>
+		</div>
+		<div class="date"><p>at {{date}}</p></div>
+	</div>
+	
+	<div class="clear"></div>
+	
+	<div class="post-content">
+		<div class="excerpt">{{excerpt}}</div>
+	</div>
+	
+</div>
+{{/foreach}}
+</section>

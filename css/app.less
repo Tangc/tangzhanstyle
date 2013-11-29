@@ -1,0 +1,83 @@
+@import "reset.css";
+
+@baseColor: #1982D1;
+.clear {
+  zoom: 1;
+  &:before, &:after {content: "\0020"; display: block; height: 0; visibility: hidden;}
+  &:after { clear: both; }
+}
+
+#wrapper{
+  position: absolute;
+  width: 1070px;
+  left: 50%;
+  margin-left: -535px;
+  header{
+    margin: 20px 10px 5px 10px;
+    padding: 0px 0px 0px 0px;
+    height: 100px;
+    background-color: white; 
+    border-bottom: 1px solid @baseColor;
+    .left-side{
+      float: left;
+      .title{
+        margin-left: 30px;
+        color: @baseColor;
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .description{
+        margin-left: 30px;
+        padding-left: 5px;
+        color: #67baf5;
+        font-size: 20px;
+        font-style: italic;
+      }
+    } 
+    .right-side{
+      float: right;
+      .logo{
+        img{ width: 300px; height: 100px; }
+      }
+    } 
+  }  
+  .post-list{
+    margin: 10px 20px 0px 20px;
+    width: 750px;
+    .post{
+      border-bottom: 1px dotted @baseColor;
+      margin: 5px 0px 10px 0px;
+      width: 600px;
+      .post-head{
+        height: 30px;
+        margin: 0px 0px 20px 0px;
+        .title{
+          float: left;
+          a{ 
+            color: #222;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none; 
+          }
+        } 
+        .date{
+          float: left;
+          p{ margin: 13px 0px 0px 10px; font-size: 15px; }
+        }        
+      }
+      .post-content{
+        margin-bottom: 20px;
+        .excerpt{
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  footer{
+    height: 30px;
+    margin: 30px 10px 0px 10px;
+    border-top: 1px solid @baseColor;
+    p{ margin-top: 10px; line-height: 15px; } 
+  }
+}

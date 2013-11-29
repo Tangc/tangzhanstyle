@@ -1,0 +1,95 @@
+@import "reset.css";
+.clear {
+  zoom: 1;
+}
+.clear:before,
+.clear:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clear:after {
+  clear: both;
+}
+#wrapper {
+  position: absolute;
+  width: 1070px;
+  left: 50%;
+  margin-left: -535px;
+}
+#wrapper header {
+  margin: 20px 10px 5px 10px;
+  padding: 0px 0px 0px 0px;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid #1982d1;
+}
+#wrapper header .left-side {
+  float: left;
+}
+#wrapper header .left-side .title {
+  margin-left: 30px;
+  color: #1982d1;
+  font-size: 36px;
+  font-weight: bold;
+}
+#wrapper header .left-side .description {
+  margin-left: 30px;
+  padding-left: 5px;
+  color: #67baf5;
+  font-size: 20px;
+  font-style: italic;
+}
+#wrapper header .right-side {
+  float: right;
+}
+#wrapper header .right-side .logo img {
+  width: 300px;
+  height: 100px;
+}
+#wrapper .post-list {
+  margin: 10px 20px 0px 20px;
+  width: 750px;
+}
+#wrapper .post-list .post {
+  border-bottom: 1px dotted #1982d1;
+  margin: 5px 0px 10px 0px;
+  width: 600px;
+}
+#wrapper .post-list .post .post-head {
+  height: 30px;
+  margin: 0px 0px 20px 0px;
+}
+#wrapper .post-list .post .post-head .title {
+  float: left;
+}
+#wrapper .post-list .post .post-head .title a {
+  color: #222;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#wrapper .post-list .post .post-head .date {
+  float: left;
+}
+#wrapper .post-list .post .post-head .date p {
+  margin: 13px 0px 0px 10px;
+  font-size: 15px;
+}
+#wrapper .post-list .post .post-content {
+  margin-bottom: 20px;
+}
+#wrapper .post-list .post .post-content .excerpt {
+  font-size: 16px;
+  line-height: 20px;
+}
+#wrapper footer {
+  height: 30px;
+  margin: 30px 10px 0px 10px;
+  border-top: 1px solid #1982d1;
+}
+#wrapper footer p {
+  margin-top: 10px;
+  line-height: 15px;
+}
